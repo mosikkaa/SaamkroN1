@@ -70,12 +70,12 @@ function Header({ open, setOpen }: { open: boolean; setOpen: (v: boolean) => voi
                             transition={{ duration: 0.2, ease: "easeOut" }}
                             className="absolute top-full left-0 w-full z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 md:hidden"
                         >
-                            <div className="mx-4 mb-4 mt-2 rounded-2xl bg-neutral-950 p-2 shadow-2xl">
+                            <div className="mx-4 mb-4 mt-2 rounded-2xl bg-neutral-950 shadow-2xl">
                                 {navItems.map((n) => (
                                     <a
                                         key={n.href}
-                                        href={n.href}
-                                        onClick={() => setOpen(false)}
+                                        href={`${n.href}`}
+                                        onClick={(e) => {handleScroll(e, n.href);setOpen(false)}}
                                         className="block rounded-xl px-4 py-3 text-neutral-300 hover:bg-white/5"
                                     >
                                         {n.label}
