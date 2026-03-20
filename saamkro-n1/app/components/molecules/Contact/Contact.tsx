@@ -35,7 +35,7 @@ function Contact() {
                         <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {t.contact.address}</p>
                     </div>
                     <div className="mt-6 flex gap-3">
-                        <Social icon={<Facebook className="h-4 w-4" />} label="Facebook" href="#" />
+                        <Social icon={<Facebook className="h-4 w-4" />} label="Facebook" href="https://www.facebook.com/saamkron1/?locale=ka_GE" />
                     </div>
                 </div>
                 <Card className="rounded-2xl border-white/10 bg-neutral-900">
