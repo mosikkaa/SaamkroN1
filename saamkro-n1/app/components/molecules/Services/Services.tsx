@@ -28,7 +28,7 @@ function Services() {
             </div>
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut"}} className="grid gap-4 md:grid-cols-3">
                 {cards.map((c,i) => (
-                    <motion.div key={c.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.2 }}>
+                    <motion.div key={c.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.15 }}>
                         <Card className="rounded-2xl border-white/10 bg-neutral-900">
                             <CardHeader className="flex flex-row items-center gap-3">
                                 <div className={`rounded-xl bg-gradient-to-tr ${theme.brand} p-2`}>{c.icon}</div>

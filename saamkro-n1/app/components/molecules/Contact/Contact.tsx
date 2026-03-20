@@ -30,7 +30,7 @@ function Contact() {
                         {t.contact.description}
                     </p>
                     <div className="mt-6 space-y-3 text-sm text-neutral-300">
-                        <p className="flex items-center gap-2"><Mail className="h-4 w-4" /> Business@saamkro1.com</p>
+                        <p className="flex items-center gap-2"><Mail className="h-4 w-4" />Business@saamkro1.com</p>
                         <p className="flex cursor-pointer items-center gap-2"><Phone className="h-4 w-4" /> <a href="tel:+995577744114" className="cursor-pointer hover:text-white transition-colors">+995 577 74 41 14</a></p>
                         <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {t.contact.address}</p>
                     </div>

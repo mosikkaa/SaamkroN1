@@ -36,7 +36,7 @@ const Portfolio = () => {
             </motion.div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((it,i) => (
-                    <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.2 }}>
+                    <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.15 }}>
                         <ProjectCard title={it.title} key={it.id} description={it.tag} it={it}>
                             {it.place}
                         </ProjectCard>
