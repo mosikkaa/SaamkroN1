@@ -6,16 +6,16 @@ function Language() {
     const { lang, setLang } = useLanguage();
 
     return (
-        <div className="flex items-center gap-1 rounded-2xl border border-white/10 bg-white/5 p-1 backdrop-blur-md">
+        <div className="flex items-center gap-1 rounded-full border border-white/10 bg-neutral-900/60 p-1 shadow-lg backdrop-blur-md">
             <button
                 onClick={() => setLang("en")}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all duration-300 ${
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all duration-300 ${
                     lang === "en"
-                        ? "bg-white/10 text-white"
-                        : "text-neutral-500 hover:text-neutral-300"
+                        ? "bg-neutral-800 text-white shadow-md ring-1 ring-white/10"
+                        : "text-neutral-500 hover:bg-white/5 hover:text-neutral-300"
                 }`}
             >
-                <span className="text-base leading-none">EN</span>
+                <span className="text-base leading-none">🇬🇧</span>
                 <AnimatePresence  initial={false}>
                     {lang === "en" && (
                         <motion.span
@@ -23,7 +23,7 @@ function Language() {
                             animate={{ width: "auto", opacity: 1 }}
                             exit={{ width: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "circOut" }}
-                            className="overflow-hidden lg:flex hidden whitespace-nowrap text-[10px] font-black tracking-widest"
+                            className="overflow-hidden hidden md:flex  whitespace-nowrap text-[10px] font-black tracking-widest"
                         >
                             ENGLISH
                         </motion.span>
@@ -31,14 +31,12 @@ function Language() {
                 </AnimatePresence>
             </button>
 
-            <div className="h-3 w-[1px] bg-white/10 mx-0.5" />
-
             <button
                 onClick={() => setLang("ka")}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all duration-300 ${
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all duration-300 ${
                     lang === "ka"
-                        ? "bg-white/10 text-white"
-                        : "text-neutral-500 hover:text-neutral-300"
+                        ? "bg-neutral-800 text-white shadow-md ring-1 ring-white/10"
+                        : "text-neutral-500 hover:bg-white/5 hover:text-neutral-300"
                 }`}
             >
                 <span className="text-base leading-none">🇬🇪</span>
@@ -49,7 +47,7 @@ function Language() {
                             animate={{ width: "auto", opacity: 1 }}
                             exit={{ width: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "circOut" }}
-                            className="overflow-hidden lg:flex hidden whitespace-nowrap text-[10px] font-black tracking-widest"
+                            className="overflow-hidden hidden md:flex whitespace-nowrap text-[10px] font-black tracking-widest"
                         >
                             ქართული
                         </motion.span>

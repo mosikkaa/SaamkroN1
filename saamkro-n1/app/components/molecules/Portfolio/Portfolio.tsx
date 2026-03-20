@@ -30,7 +30,7 @@ const Portfolio = () => {
                     <h1 className="text-2xl font-bold sm:text-3xl">{t.portfolio.title}</h1>
                     <p className="mt-2 max-w-xl text-neutral-300">{t.portfolio.subtitle}</p>
                 </div>
-                <Button asChild variant="secondary" className="rounded-2xl bg-white/10 text-white hover:bg-white/20">
+                <Button asChild variant="secondary" className="rounded-2xl hidden md:block bg-white/10 text-white hover:bg-white/20">
                     <a href="#contact">Start a project</a>
                 </Button>
             </motion.div>
