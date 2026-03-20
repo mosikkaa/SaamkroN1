@@ -32,7 +32,7 @@ function Contact() {
                     <div className="mt-6 space-y-3 text-sm text-neutral-300">
                         <p className="flex items-center gap-2"><Mail className="h-4 w-4" />Business@saamkro1.com</p>
                         <p className="flex cursor-pointer items-center gap-2"><Phone className="h-4 w-4" /> <a href="tel:+995577744114" className="cursor-pointer hover:text-white transition-colors">+995 577 74 41 14</a></p>
-                        <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {t.contact.address}</p>
+                        <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /><a href="https://www.google.com/maps/place/Saamkro%231/@41.7793519,44.7913651,17z/data=!4m15!1m8!3m7!1s0x40446d00106dd4c9:0xfd6da4179377a69c!2sSaamkro%231!8m2!3d41.7795441!4d44.7909158!10e5!16s%2Fg%2F11wwp0ycf9!3m5!1s0x40446d00106dd4c9:0xfd6da4179377a69c!8m2!3d41.7795441!4d44.7909158!16s%2Fg%2F11wwp0ycf9?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-white transition-colors">{t.contact.address}</a></p>
                     </div>
                     <div className="mt-6 flex gap-3">
                         <Social icon={<Facebook className="h-4 w-4" />} label="Facebook" href="https://www.facebook.com/saamkron1/?locale=ka_GE" />
