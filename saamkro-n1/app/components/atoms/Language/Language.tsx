@@ -15,7 +15,7 @@ function Language() {
                         : "text-neutral-500 hover:text-neutral-300"
                 }`}
             >
-                <span className="text-base leading-none">🇺🇸</span>
+                <span className="text-base leading-none">EN</span>
                 <AnimatePresence  initial={false}>
                     {lang === "en" && (
                         <motion.span
