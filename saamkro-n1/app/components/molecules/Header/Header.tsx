@@ -68,9 +68,9 @@ function Header({ open, setOpen }: { open: boolean; setOpen: (v: boolean) => voi
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.2, ease: "easeOut" }}
-                            className="absolute top-full left-0 w-full z-50 bg-neutral-950/95 backdrop-blur-lg md:hidden"
+                            className="absolute top-full left-0 w-full z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 md:hidden"
                         >
-                            <div className="mx-4 mb-4 mt-2 rounded-2xl border border-white/10 bg-neutral-900 p-2 shadow-2xl">
+                            <div className="mx-4 mb-4 mt-2 rounded-2xl bg-neutral-950 p-2 shadow-2xl">
                                 {navItems.map((n) => (
                                     <a
                                         key={n.href}

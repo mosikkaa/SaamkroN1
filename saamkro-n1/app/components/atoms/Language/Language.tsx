@@ -23,7 +23,7 @@ function Language() {
                             animate={{ width: "auto", opacity: 1 }}
                             exit={{ width: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "circOut" }}
-                            className="overflow-hidden whitespace-nowrap text-[10px] font-black tracking-widest"
+                            className="overflow-hidden lg:flex hidden whitespace-nowrap text-[10px] font-black tracking-widest"
                         >
                             ENGLISH
                         </motion.span>
@@ -31,10 +31,8 @@ function Language() {
                 </AnimatePresence>
             </button>
 
-            {/* Vertical Divider */}
             <div className="h-3 w-[1px] bg-white/10 mx-0.5" />
 
-            {/* Georgian Toggle */}
             <button
                 onClick={() => setLang("ka")}
                 className={`flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all duration-300 ${
@@ -51,7 +49,7 @@ function Language() {
                             animate={{ width: "auto", opacity: 1 }}
                             exit={{ width: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "circOut" }}
-                            className="overflow-hidden whitespace-nowrap text-[10px] font-black tracking-widest"
+                            className="overflow-hidden lg:flex hidden whitespace-nowrap text-[10px] font-black tracking-widest"
                         >
                             ქართული
                         </motion.span>
