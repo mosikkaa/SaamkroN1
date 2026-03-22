@@ -47,7 +47,7 @@ function Contact() {
                 setStatus("idle");
             }, 8000);
 
-            return () => clearTimeout(timer); 
+            return () => clearTimeout(timer);
         }
     }, [status]);
 
