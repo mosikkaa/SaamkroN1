@@ -8,6 +8,7 @@ function Language() {
     return (
         <div className="flex items-center gap-1 rounded-full border border-white/10 bg-neutral-900/60 p-1 shadow-lg backdrop-blur-md">
             <button
+                suppressHydrationWarning
                 onClick={() => setLang("en")}
                 className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all duration-300 ${
                     lang === "en"
@@ -32,6 +33,7 @@ function Language() {
             </button>
 
             <button
+                suppressHydrationWarning
                 onClick={() => setLang("ka")}
                 className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all duration-300 ${
                     lang === "ka"
