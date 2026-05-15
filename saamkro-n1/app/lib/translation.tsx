@@ -12,8 +12,8 @@ export const translations = {
         },
         hero: {
             since: "Since 2015 — Tbilisi & beyond",
-            titleMain: "Furniture, Title Signage &",
-            titleAccent: "Advertising",
+            titleMain: "From an idea,",
+            titleAccent: "to Reality",
             description: "We design and build standout furniture, company titles, and visual advertising. From shopfronts to full spatial branding, we handle concept → fabrication → install.",
             ctaSeeWork: "See work",
             ctaQuote: "Get a quote",
@@ -98,8 +98,8 @@ export const translations = {
         },
         hero: {
             since: "2015 წლიდან — თბილისი და რეგიონები",
-            titleMain: "ავეჯი, გარე რეკლამა და",
-            titleAccent: "აბრები",
+            titleMain: "იდეიდან -",
+            titleAccent: "რეალობამდე",
             description: "ჩვენ ვქმნით გამორჩეულ ავეჯს, კომპანიის ლოგოებსა და ვიზუალურ რეკლამას. ექსტერიერიდან სრულ სივრცით ბრენდინგამდე: კონცეფცია → დამზადება → მონტაჟი.",
             ctaSeeWork: "ნამუშევრები",
             ctaQuote: "ფასის გაგება",
@@ -119,12 +119,12 @@ export const translations = {
                     text: "მაგიდები, დახლები და საგამოფენო სტენდები გამძლე მასალებითა და სუფთა დამუშავებით."
                 },
                 signage: {
-                    title: "აბრები და ნავიგაცია",
-                    text: "გარე და შიდა აბრები, მოცულობითი ასოები და მონტაჟი ლაზერული სიზუსტით."
+                    title: "სარეკლამო აბრები",
+                    text: "გარე და შიდა სივრცისათვის შექმნილი აბრები, მოცულობითი ასოები და ნავიგაციური სისტემები — დამზადებული მაქსიმალური სიზუსტით და სრულყოფილი მონტაჟით."
                 },
                 branding: {
-                    title: "ბრენდინგი და რეკლამა",
-                    text: "ლოგოები, ვიტრინების შეფუთვა, ბანერები და კამპანიის ვიზუალები თქვენი სივრცისთვის."
+                    title: "სატელევიზიო სტუდიები და შოურუმები",
+                    text: "სატელევიზიო და მედია სივრცეების სრულყოფილი დიზაინი და რეალიზაცია — შესრულებული უმაღლეს პროფესიონალურ დონეზე."
                 }
             }
         },
