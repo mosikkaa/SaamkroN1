@@ -33,7 +33,7 @@ const Hero = () => {
                     </p>
                     <div className="mt-6 flex flex-wrap gap-3">
                         <Button asChild className="rounded-2xl bg-white/10 text-white hover:bg-white/20">
-                            <a href="#portfolio">{t.hero.ctaSeeWork}</a>
+                            <a href="/portfolio">{t.hero.ctaSeeWork}</a>
                         </Button>
                         <Button asChild variant="secondary" className="rounded-2xl bg-white/10 text-white hover:bg-white/20">
                             <a href="#contact">Get a quote</a>

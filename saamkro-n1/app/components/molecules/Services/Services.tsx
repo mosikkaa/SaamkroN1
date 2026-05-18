@@ -1,4 +1,4 @@
-import {ArrowRight, Hammer, PaintBucket, Ruler} from "lucide-react";
+import {ArrowRight, Hammer, PaintBucket, Ruler,Wrench} from "lucide-react";
 import {Card, CardContent, CardHeader, CardTitle} from "../../atoms/Card/Card";
 import { motion } from "framer-motion";
 import {useLanguage} from "@/app/context/LanguageContext";
@@ -13,9 +13,11 @@ function Services() {
     const {t} = useLanguage()
 
     const cards = [
-        { icon: <Hammer className="h-5 w-5" />, title: `${t.services.items.furniture.title}`, text: `${t.services.items.furniture.text}` },
         { icon: <Ruler className="h-5 w-5" />, title: `${t.services.items.signage.title}`, text: `${t.services.items.signage.text}` },
+        { icon: <PaintBucket className="h-5 w-5" />, title: `${t.services.items.studios.title}`, text: `${t.services.items.studios.text}` },
         { icon: <PaintBucket className="h-5 w-5" />, title: `${t.services.items.branding.title}`, text: `${t.services.items.branding.text}` },
+        { icon: <Wrench className="h-5 w-5" />, title: `${t.services.items.metal.title}`, text: `${t.services.items.metal.text}` },
+        { icon: <Hammer className="h-5 w-5" />, title: `${t.services.items.furniture.title}`, text: `${t.services.items.furniture.text}` },
     ];
     return (
         <section id="services" className="mx-auto pr-8 pl-8 px-4 py-16">
@@ -28,8 +30,8 @@ function Services() {
             </div>
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut"}} className="grid gap-4 md:grid-cols-3">
                 {cards.map((c,i) => (
-                    <motion.div key={c.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.15 }}>
-                        <Card className="rounded-2xl border-white/10 bg-neutral-900">
+                    <motion.div className="" key={c.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut",delay:i*0.15 }}>
+                        <Card className="h-full w-full rounded-2xl border-white/10 bg-neutral-900">
                             <CardHeader className="flex flex-row items-center gap-3">
                                 <div className={`rounded-xl bg-gradient-to-tr ${theme.brand} p-2`}>{c.icon}</div>
                                 <CardTitle className="text-lg ">{c.title}</CardTitle>

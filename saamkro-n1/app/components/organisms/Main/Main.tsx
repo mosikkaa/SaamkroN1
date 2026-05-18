@@ -1,5 +1,5 @@
 'use client';
-import {useState} from "react";
+import { useState } from "react";
 import Header from "../../molecules/Header/Header";
 import Hero from "../../molecules/Hero/Hero";
 import Services from "../../molecules/Services/Services";

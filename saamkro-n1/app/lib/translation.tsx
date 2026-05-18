@@ -28,31 +28,38 @@ export const translations = {
             subtitle: "End‑to‑end: concept, 3D, fabrication, transport, and install across Georgia.",
             cta: "Get a quote",
             items: {
-                furniture: {
-                    title: "Custom Furniture",
-                    text: "Tables, counters, and display units with durable materials and clean finishes."
-                },
-                signage: {
-                    title: "Title Signs & Wayfinding",
-                    text: "Exterior/interior signage, letterforms, and installation with laser‑cut precision."
-                },
                 branding: {
                     title: "Branding & Advertising",
-                    text: "Logos, storefront wraps, banners, and campaign visuals that match your space."
+                    text: "Complete visual identity solutions including logos, storefront designs, banners, and promotional graphics that effectively showcase your brand."
+                },
+                signage: {
+                    title: "Signs & Wayfinding",
+                    text: "Exterior and interior signage, dimensional letters, and navigation systems crafted with maximum precision and professionally installed."
+                },
+                studios: {
+                    title: "TV Studios & Showrooms",
+                    text: "Full design and execution of television and media spaces, delivered to the highest professional standards with complete technical and visual accuracy."
+                },
+                metal: {
+                    title: "Metal Constructions",
+                    text: "Durable and functional metal and steel structures crafted for strength, precision fabrication, and reliable installation."
+                },
+                furniture: {
+                    title: "Custom Furniture",
+                    text: "Kitchen islands, tables, chairs, cabinets, and artistic elements made with premium quality materials and exceptional attention to detail."
                 }
             }
         },
         about: {
             title: "About Saamkro N1",
             description: "We’re a Tbilisi-based workshop and studio creating furniture, company title signs, and advertising pieces. Our process blends design thinking with hands‑on craft.",
-            featurePreview: "3D previews before fabrication",
-            featureMeasure: "Site measurements & installation",
-            featureMaterials: "Custom materials & finishes",
         },
         portfolio: {
             title: "Projects",
             subtitle: "A few builds and installs. We’ll swap in more photos as you send them.",
             ctaStart: "Start a project",
+            viewAll: "View all works",
+            backToAll: "Back to all works",
             locationDefault: "Tbilisi, Georgia",
             tags: {
                 facade: "Facade lighting & signage",
@@ -114,31 +121,38 @@ export const translations = {
             subtitle: "კონცეფცია, 3D მოდელირება, დამზადება და მონტაჟი მთელ საქართველოში.",
             cta: "ფასის გაგება",
             items: {
-                furniture: {
-                    title: "ავეჯის დამზადება",
-                    text: "მაგიდები, დახლები და საგამოფენო სტენდები გამძლე მასალებითა და სუფთა დამუშავებით."
+                branding: {
+                    title: "ბრენდინგი და რეკლამა",
+                    text: "ბრენდის ვიზუალური იდენტობის შექმნა — ლოგოები, ვიტრინების დიზაინი, ბანერები და სარეკლამო ვიზუალები, რომლებიც ეფექტურად წარმოსაჩენს თქვენს სივრცეს."
                 },
                 signage: {
                     title: "სარეკლამო აბრები",
                     text: "გარე და შიდა სივრცისათვის შექმნილი აბრები, მოცულობითი ასოები და ნავიგაციური სისტემები — დამზადებული მაქსიმალური სიზუსტით და სრულყოფილი მონტაჟით."
                 },
-                branding: {
-                    title: "სატელევიზიო სტუდიები და შოურუმები",
+                studios: {
+                    title: "სატელევიზიო სტუდიები",
                     text: "სატელევიზიო და მედია სივრცეების სრულყოფილი დიზაინი და რეალიზაცია — შესრულებული უმაღლეს პროფესიონალურ დონეზე."
+                },
+                metal:{
+                    title: "მეტალის კონსტრუქციები",
+                    text: "მდგრადი და ფუნქციური მეტალისა და რკინის კონსტრუქციები — შექმნილი მაღალი გამძლეობით, ზუსტი დამუშავებითა და საიმედო მონტაჟით."
+                },
+                furniture:{
+                    title: "ავეჯის დამზადება",
+                    text:"სამზარეულოს კუნძულები, მაგიდები, სკამები, კარადები და მხატრული ელემენტები — შესრულებული უმაღლესი ხარისხით."
                 }
             }
         },
         about: {
             title: "საამქრო N1-ის შესახებ",
-            description: "ჩვენ ვართ თბილისში ბაზირებული სახელოსნო და სტუდია, რომელიც ქმნის ავეჯს, კომპანიის აბრებსა და სარეკლამო დეტალებს. ჩვენი პროცესი აერთიანებს დიზაინერულ ხედვასა და ხელით მუშაობას.",
-            featurePreview: "3D ნახვა დამზადებამდე",
-            featureMeasure: "აზომვა და მონტაჟი",
-            featureMaterials: "მასალების ფართო არჩევანი",
+            description: "ჩვენ ვართ თბილისში დაფუძნებული სახელოსნო და სტუდია, რომელიც სპეციალიზდება ავეჯის, კომპანიის აბრებისა და სარეკლამო ელემენტების შექმნაში. ჩვენი საქმიანობა აერთიანებს დიზაინერულ ხედვასა და მაღალხარისხიან ხელობას, რაც გვაძლევს შესაძლებლობას, შევქმნათ ფუნქციური და ვიზუალურად გამორჩეული პროდუქტები.",
         },
         portfolio: {
             title: "პროექტები",
             subtitle: "ჩვენი ნამუშევრები. ფოტოები განახლდება ეტაპობრივად.",
             ctaStart: "პროექტის დაწყება",
+            viewAll: "ყველა ნამუშევარი",
+            backToAll: "ყველა პროექტზე დაბრუნება",
             locationDefault: "საქართველო",
             tags: {
                 facade: "ფასადის განათება და აბრა",

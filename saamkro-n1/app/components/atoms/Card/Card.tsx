@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 import {MapPin} from "lucide-react";
 
 interface ProjectCardProps {
-    title: string;
-    description: string;
-    it:any,
-    children:string,
-    src?: string;
+    it: {
+        src: string | import("next/image").StaticImageData;
+        title: string;
+        tag: string;
+    };
+    children: string;
 }
 
 const ProjectCard = ({ it,children}: ProjectCardProps) => {
