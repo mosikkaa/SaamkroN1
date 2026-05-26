@@ -11,7 +11,7 @@ export const translations = {
             getQuote: "Get a quote",
         },
         hero: {
-            since: "Since 2015 — Tbilisi & beyond",
+            since: "Since 2003 — Tbilisi & beyond",
             titleMain: "From an idea,",
             titleAccent: "to Reality",
             description: "We design and build standout furniture, company titles, and visual advertising. From shopfronts to full spatial branding, we handle concept → fabrication → install.",
@@ -108,7 +108,7 @@ export const translations = {
             getQuote: "ფასის გაგება",
         },
         hero: {
-            since: "2015 წლიდან — თბილისი და რეგიონები",
+            since: "2003 წლიდან — თბილისი და რეგიონები",
             titleMain: "იდეიდან -",
             titleAccent: "რეალობამდე",
             description: "ჩვენ ვქმნით გამორჩეულ ავეჯს, კომპანიის ლოგოებსა და ვიზუალურ რეკლამას. ექსტერიერიდან სრულ სივრცით ბრენდინგამდე: კონცეფცია → დამზადება → მონტაჟი.",

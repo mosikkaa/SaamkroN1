@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/context/LanguageContext";
-import dreamland from '../../../assets/dreamland.jpg';
+import Urban from '../../../assets/urbantails.jpg';
 import Image from "next/image";
 
 const theme = {
@@ -40,7 +40,7 @@ const About = () => {
                     <div className={`h-64 rounded-2xl overflow-hidden bg-gradient-to-tr ${theme.brand}`}>
                         <Image
                             className="w-full h-full object-cover block"
-                            src={dreamland}
+                            src={Urban}
                             alt="Saamkro N1 workshop — completed project installation"
                         />
                     </div>
