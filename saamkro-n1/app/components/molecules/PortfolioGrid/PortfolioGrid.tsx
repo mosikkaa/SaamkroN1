@@ -6,25 +6,34 @@ import { ProjectCard } from "../../atoms/Card/Card";
 import { portfolioWorks } from "@/app/lib/portfolioData";
 import { useLanguage } from "@/app/context/LanguageContext";
 
-const PortfolioGrid = () => {
+const gridContainer = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.1 } },
+};
+
+const cardItem = {
+    hidden: { opacity: 0, y: 36 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { type: "spring" as const, stiffness: 80, damping: 16 },
+    },
+};
+
+const PortfolioGrid = ({ limit }: { limit?: number }) => {
     const { t } = useLanguage();
+    const works = limit ? portfolioWorks.slice(0, limit) : portfolioWorks;
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            variants={gridContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
             className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
-            {portfolioWorks.map((work, i) => (
-                <motion.div
-                    key={work.id}
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.15 }}
-                >
+            {works.map((work) => (
+                <motion.div key={work.id} variants={cardItem}>
                     <Link href={`/portfolio/${work.id}`} className="block">
                         <ProjectCard
                             it={{

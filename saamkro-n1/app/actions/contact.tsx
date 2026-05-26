@@ -13,10 +13,9 @@ export async function handleContactForm(formData: FormData) {
     const message = formData.get("message") as string;
 
     try {
-        // Sending into the email
         await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'meskhiluk@gmail.com', // Your email
+            to: 'Business@saamkro1.com',
             subject: `New Message from ${name}`,
             html: `
         <h3>New Inquiry from Portfolio</h3>
@@ -27,7 +26,6 @@ export async function handleContactForm(formData: FormData) {
       `
         });
 
-        // 2. twilio - > to whatsapp
         await twilioClient.messages.create({
             from: 'whatsapp:+14155238886',
             to: `whatsapp:${process.env.MY_WHATSAPP_NUMBER}`,

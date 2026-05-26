@@ -1,0 +1,21 @@
+{
+  "name": "Saamkro N1",
+  "short_name": "Saamkro N1",
+  "description": "Custom signs, furniture & visual advertising · Tbilisi, Georgia",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

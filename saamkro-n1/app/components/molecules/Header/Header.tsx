@@ -11,7 +11,8 @@ import { useSectionNav } from "@/app/hooks/useSectionNav";
 import { useEffect, useState } from "react";
 
 
-function Header({ open, setOpen }: { open: boolean; setOpen: (v: boolean) => void }) {
+function Header() {
+    const [open, setOpen] = useState(false);
 
     const { t } = useLanguage();
     const pathname = usePathname();

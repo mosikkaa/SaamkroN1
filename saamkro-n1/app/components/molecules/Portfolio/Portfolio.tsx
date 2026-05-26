@@ -37,7 +37,7 @@ const Portfolio = () => {
                     </Button>
                 </div>
             </motion.div>
-            <PortfolioGrid />
+            <PortfolioGrid limit={6} />
         </section>
     );
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Main from "@/app/components/organisms/Main/Main";
 
 export default function Home() {

@@ -47,6 +47,10 @@ export const translations = {
                 furniture: {
                     title: "Custom Furniture",
                     text: "Kitchen islands, tables, chairs, cabinets, and artistic elements made with premium quality materials and exceptional attention to detail."
+                },
+                laser: {
+                    title: "Laser Cutting",
+                    text: "High-precision laser cutting across a variety of materials — perfect details and professional finish, for decorative, advertising, and industrial projects alike."
                 }
             }
         },
@@ -56,7 +60,7 @@ export const translations = {
         },
         portfolio: {
             title: "Projects",
-            subtitle: "A few builds and installs. We’ll swap in more photos as you send them.",
+            subtitle: "A few builds and installs.",
             ctaStart: "Start a project",
             viewAll: "View all works",
             backToAll: "Back to all works",
@@ -140,6 +144,10 @@ export const translations = {
                 furniture:{
                     title: "ავეჯის დამზადება",
                     text:"სამზარეულოს კუნძულები, მაგიდები, სკამები, კარადები და მხატრული ელემენტები — შესრულებული უმაღლესი ხარისხით."
+                },
+                laser: {
+                    title: "ლაზერული ჭრა",
+                    text: "მაღალი სიზუსტით შესრულებული ლაზერული ჭრა სხვადასხვა მასალაზე - როგორც დეკორისთვის, ასევე სარეკლამო და ინდუსტრიული პროექტებისთვის."
                 }
             }
         },
