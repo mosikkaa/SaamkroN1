@@ -72,7 +72,7 @@ const Hero = () => {
                         </Button>
                     </motion.div>
 
-                    <motion.ul variants={item} className="mt-8 flex flex-wrap gap-6 text-sm text-neutral-300">
+                    <motion.ul variants={item} className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-6 text-sm text-neutral-300">
                         <li className="flex items-center gap-2"><Hammer className="h-4 w-4" /> {t.hero.featureFab}</li>
                         <li className="flex items-center gap-2"><Ruler className="h-4 w-4" /> {t.hero.featureInst}</li>
                         <li className="flex items-center gap-2"><PaintBucket className="h-4 w-4" /> {t.hero.featureFinish}</li>
