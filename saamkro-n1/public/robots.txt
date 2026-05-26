@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://saamkro-n1-new.vercel.app/sitemap.xml
+Sitemap: https://saamkro1.com/sitemap.xml

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { portfolioWorks } from "./lib/portfolioData";
 
-const BASE_URL = "https://saamkro-n1-new.vercel.app";
+const BASE_URL = "https://saamkro1.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
