@@ -1,6 +1,6 @@
 'use client';
 import { Menu, X } from "lucide-react";
-import Logo from '../../../../public/logo.jpg'
+import Logo from '../../../favicon.ico'
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
