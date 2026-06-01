@@ -21,68 +21,68 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
-  title: {
-    default: "Saamkro N1 — Signs, Furniture & Visual Advertising · Tbilisi",
-    template: "%s | Saamkro N1",
-  },
-  description:
-    "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising. Full cycle: concept → fabrication → installation across Georgia. Est. 2015.",
-  keywords: [
-    "signage Tbilisi",
-    "custom signs Georgia",
-    "facade lighting",
-    "visual advertising Tbilisi",
-    "lightbox signs",
-    "neon signs Georgia",
-    "advertising workshop Tbilisi",
-    "სააამქრო N1",
-    "რეკლამა თბილისი",
-    "ვიტრინა",
-  ],
-  authors: [{ name: "Saamkro N1", url: BASE_URL }],
-  creator: "Saamkro N1",
-  publisher: "Saamkro N1",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
+    metadataBase: new URL(BASE_URL),
+    title: {
+        default: "Saamkro N1 — Signs, Furniture & Visual Advertising · Tbilisi",
+        template: "%s | Saamkro N1",
     },
-  },
-  openGraph: {
-    title: "Saamkro N1 — Signs, Furniture & Visual Advertising",
     description:
-      "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising across Georgia. Est. 2015.",
-    url: BASE_URL,
-    siteName: "Saamkro N1",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Saamkro N1 — Signs & Visual Advertising, Tbilisi",
-      },
+        "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising. Full cycle: concept → fabrication → installation across Georgia. Est. 2015.",
+    keywords: [
+        "signage Tbilisi",
+        "custom signs Georgia",
+        "facade lighting",
+        "visual advertising Tbilisi",
+        "lightbox signs",
+        "neon signs Georgia",
+        "advertising workshop Tbilisi",
+        "სააამქრო N1",
+        "რეკლამა თბილისი",
+        "ვიტრინა",
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Saamkro N1 — Signs, Furniture & Visual Advertising",
-    description:
-      "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising across Georgia. Est. 2015.",
-    images: ["/logo.jpg"],
-  },
-  alternates: {
-    canonical: BASE_URL,
-  },
-  manifest: "/site.webmanifest",
-  category: "business",
+    authors: [{ name: "Saamkro N1", url: BASE_URL }],
+    creator: "Saamkro N1",
+    publisher: "Saamkro N1",
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+        },
+    },
+    openGraph: {
+        title: "Saamkro N1 — Signs, Furniture & Visual Advertising",
+        description:
+            "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising across Georgia. Est. 2015.",
+        url: BASE_URL,
+        siteName: "Saamkro N1",
+        locale: "en_US",
+        type: "website",
+        images: [
+            {
+                url: `${BASE_URL}/logo.jpg`,
+                width: 1200,
+                height: 630,
+                alt: "Saamkro N1 — Signs & Visual Advertising, Tbilisi",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Saamkro N1 — Signs, Furniture & Visual Advertising",
+        description:
+            "Tbilisi-based workshop crafting custom signs, furniture, and visual advertising across Georgia. Est. 2015.",
+        images: [`${BASE_URL}/og-image.jpg`],
+    },
+    alternates: {
+        canonical: BASE_URL,
+    },
+    manifest: "/site.webmanifest",
+    category: "business",
 };
 
 const jsonLd = {
