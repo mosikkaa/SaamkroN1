@@ -11,8 +11,7 @@ export async function handleContactForm(formData: FormData) {
     const email = formData.get("email") as string;
     const phone = formData.get("number") as string;
     const message = formData.get("message") as string;
-
-
+    
     const { data, error } = await resend.emails.send({
         from: 'onboarding@resend.dev',
         to: 'business@saamkro1.com',
@@ -29,7 +28,7 @@ export async function handleContactForm(formData: FormData) {
 
     if (error) {
         console.error("Resend error:", error);
-        return { success: false, stage: "email" };
+        return { success: false };
     }
     console.log("Email sent:", data);
 
@@ -41,8 +40,7 @@ export async function handleContactForm(formData: FormData) {
             body: `🚀 New Inquiry!\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
         });
     } catch (twilioError) {
-        console.error("Twilio error:", twilioError);
-        return { success: true, whatsapp: false }; 
+        console.error("Twilio error (ignored):", twilioError);
     }
 
     return { success: true };
