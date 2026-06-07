@@ -12,29 +12,38 @@ export async function handleContactForm(formData: FormData) {
     const phone = formData.get("number") as string;
     const message = formData.get("message") as string;
 
-    try {
-        await resend.emails.send({
-            from: 'onboarding@resend.dev',
-            to: 'Business@saamkro1.com',
-            subject: `New Message from ${name}`,
-            html: `
-        <h3>New Inquiry from Portfolio</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong> ${message}</p>
-      `
-        });
 
+    const { data, error } = await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: 'business@saamkro1.com',
+        replyTo: email,
+        subject: `New Message from ${name}`,
+        html: `
+            <h3>New Inquiry from Portfolio</h3>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Message:</strong> ${message}</p>
+        `,
+    });
+
+    if (error) {
+        console.error("Resend error:", error);
+        return { success: false, stage: "email" };
+    }
+    console.log("Email sent:", data);
+
+
+    try {
         await twilioClient.messages.create({
             from: 'whatsapp:+14155238886',
             to: `whatsapp:${process.env.MY_WHATSAPP_NUMBER}`,
-            body: `🚀 New Inquiry!\nName: ${name}\nPhone:${phone}\nEmail:${email}\nMessage: ${message}`,
+            body: `🚀 New Inquiry!\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
         });
-
-        return { success: true };
-    } catch (error) {
-        console.error("Error:", error);
-        return { success: false };
+    } catch (twilioError) {
+        console.error("Twilio error:", twilioError);
+        return { success: true, whatsapp: false }; 
     }
+
+    return { success: true };
 }
