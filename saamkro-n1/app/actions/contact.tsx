@@ -11,7 +11,7 @@ export async function handleContactForm(formData: FormData) {
     const email = formData.get("email") as string;
     const phone = formData.get("number") as string;
     const message = formData.get("message") as string;
-    
+
     const { data, error } = await resend.emails.send({
         from: 'onboarding@resend.dev',
         to: 'business@saamkro1.com',
